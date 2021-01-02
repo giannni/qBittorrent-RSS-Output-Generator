@@ -1,13 +1,11 @@
 # qBittorrent RSS Output Generator
  Quick script to create a readable json format to input to the RSS autodownloading rules for qBittorrent.
 ```
-
 Name of show input example: Sword Art Online
 
 Save path input example: C:/Users/Name/Shows/Sword Art Online
 
 Must contain input example: Sword Art Online
-
 ```
 
 **Output Example:**
