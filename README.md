@@ -11,22 +11,20 @@ Must contain input example: Sword Art Online
 **Output Example:**
 
 ```
-"Black Clover":{
+"Sword Art Online":{
     "addPaused": null,
     "affectedFeeds": [
-        "https://nyaa.si/?page=rss&u=Judas",
-        "https://nyaa.si/?page=rss&u=sff",
-        "https://nyaa.si/?page=rss&u=subsplease"
+        "https://google.com/?page=rss&u="
     ],
     "assignedCategory": "Anime",
     "enabled": true,
     "episodeFilter": "",
     "ignoreDays": 0,
     "lastMatch": "",
-    "mustContain": "Black Clover",
+    "mustContain": "Sword Art Online",
     "mustNotContain": "*720 | *360 | *480 | *540 | *VRV",
     "previouslyMatchedEpisodes": [],
-    "savePath": "D:/Downloads/Anime Shows/Ongoing/Watching/Black Clover",
+    "savePath": "D:/Downloads/Shows/Sword Art Online",
     "smartFilter": false,
     "torrentContentLayout": null,
     "useRegex": false
