@@ -26,9 +26,7 @@ def json_creation():
     nameOfShow = raw_input("Paste the name of the show: ")
     savePath = raw_input("Paste save path directory: ")
     mustContain = raw_input("Paste what the show must contain to find it: ")
-    feeds = ["https://nyaa.si/?page=rss&u=Judas",
-             "https://nyaa.si/?page=rss&u=sff",
-             "https://nyaa.si/?page=rss&u=subsplease"]
+    feeds = ["https://google.com/?page=rss&u="]
     json_object = rss_object(None, feeds, "Anime", True, "", 0, "", mustContain, "*720 | *360 | *480 | *540 | *VRV", [],
                              savePath, False, None, False)
     json_string = json.dumps(json_object.__dict__)
