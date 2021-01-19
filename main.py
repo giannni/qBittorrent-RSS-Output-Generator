@@ -2,7 +2,7 @@ import json
 from pip._vendor.distlib.compat import raw_input
 
 
-class rss_object:
+class rssObject:
     def __init__(self, addPaused, affectedFeeds, assignedCategory, enabled, episodeFilter, ignoreDays,
                  lastMatch, mustContain, mustNotContain, previouslyMatchedEpisodes, savePath, smartFilter,
                  torrentContentLayout, useRegex):
@@ -22,24 +22,22 @@ class rss_object:
         self.useRegex = useRegex
 
 
-def json_creation():
+def jsonCreation():
     nameOfShow = raw_input("Paste the name of the show: ")
     savePath = raw_input("Paste save path directory: ")
     mustContain = raw_input("Paste what the show must contain to find it: ")
-    feeds = ["https://nyaa.si/?page=rss&u=Judas",
-             "https://nyaa.si/?page=rss&u=sff",
-             "https://nyaa.si/?page=rss&u=subsplease"]
-    json_object = rss_object(None, feeds, "Anime", True, "", 0, "", mustContain, "*720 | *360 | *480 | *540 | *VRV", [],
+    feeds = ["https://google.com/?page=rss&u="]
+    jsonObject = rssObject(None, feeds, "Anime", True, "", 0, "", mustContain, "*720 | *360 | *480 | *540 | *VRV", [],
                              savePath, False, None, False)
-    json_string = json.dumps(json_object.__dict__)
-    json_dict = json.loads(json_string)
-    json_formatted = json.dumps(json_dict, indent=4, sort_keys=True)
-    print(json_formatted)
+    jsonString = json.dumps(jsonObject.__dict__)
+    jsonDict = json.loads(jsonString)
+    jsonFormatted = json.dumps(jsonDict, indent=4, sort_keys=True)
+    print(jsonFormatted)
     ourFile = open("rules.json", "w")
     ourFile.write(f'"{nameOfShow}":')
-    ourFile.write(json_formatted)
+    ourFile.write(jsonFormatted)
     ourFile.close()
 
 
 if __name__ == '__main__':
-    json_creation()
+    jsonCreation()
