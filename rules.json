@@ -1,4 +1,4 @@
-"Black Clover":{
+"Mars Red":{
     "addPaused": null,
     "affectedFeeds": [
         "https://nyaa.si/?page=rss&u=Judas",
@@ -10,10 +10,10 @@
     "episodeFilter": "",
     "ignoreDays": 0,
     "lastMatch": "",
-    "mustContain": "Black Clover",
+    "mustContain": "Mars Red",
     "mustNotContain": "*720 | *360 | *480 | *540 | *VRV",
     "previouslyMatchedEpisodes": [],
-    "savePath": "D:/Downloads/Anime Shows/Ongoing/Watching/Black Clover",
+    "savePath": "D:\Downloads\Anime Shows\Ongoing\Spring 2021\Mars Red",
     "smartFilter": false,
     "torrentContentLayout": null,
     "useRegex": false
