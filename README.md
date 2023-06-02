@@ -3,7 +3,7 @@
 ```
 Name of show input example: Sword Art Online
 
-Save path input example: C:/Users/Name/Shows/Sword Art Online
+Save path input example: C:\Users\Name\Shows\Sword Art Online (Use notepad++ to replace outputted \\)
 
 Must contain input example: Sword Art Online
 ```
