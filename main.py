@@ -3,6 +3,7 @@ import PySimpleGUI as sg
 
 sg.theme('dark grey 9')
 
+
 # create layout
 layout = [[sg.Text("Name of show")], [sg.Input(key='-NAMEOFSHOW-')],
           [sg.Text("Save Path")], [sg.Input(key='-SAVEPATH-')],
@@ -42,17 +43,16 @@ if __name__ == '__main__':
         # See if user wants to quit or window was closed
         if event == sg.WINDOW_CLOSED or event == 'Quit':
             break
-
+        
         # Grab our values from GUI
         nameOfShow = values['-NAMEOFSHOW-']
         savePath = values['-SAVEPATH-']
         mustContain = values['-MUSTCONTAIN-']
         category = values['-CATEGORY-']
-        feeds = [""]
+        feeds = ["https://nyaa.si/?page=rss&u=Judas"]
 
         # Fill our JSON data object
-        jsonObject = rssObject(None, feeds, category, True, "", 0, "", mustContain, "*720 | *360 | *480 | *540 | *VRV",
-                               [], savePath, False, None, False)
+        jsonObject = rssObject(None, feeds, category, True, "", 0, "", mustContain, "*720 | *360 | *480 | *540 | *VRV", [], savePath, False, None, False)
         jsonString = json.dumps(jsonObject.__dict__)
         jsonDict = json.loads(jsonString)
         jsonFormatted = json.dumps(jsonDict, indent=4, sort_keys=True)
