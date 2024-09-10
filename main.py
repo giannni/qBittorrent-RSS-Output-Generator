@@ -49,7 +49,7 @@ if __name__ == '__main__':
         savePath = values['-SAVEPATH-']
         mustContain = values['-MUSTCONTAIN-']
         category = values['-CATEGORY-']
-        feeds = ["https://nyaa.si/?page=rss&u=Judas"]
+        feeds = [""]
 
         # Fill our JSON data object
         jsonObject = rssObject(None, feeds, category, True, "", 0, "", mustContain, "*720 | *360 | *480 | *540 | *VRV", [], savePath, False, None, False)
